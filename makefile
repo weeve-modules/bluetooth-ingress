@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-MODULE=weevenetwork/python-ingress-boilerplate
+MODULE=weevenetwork/bluetooth-ingress
 create_image:
 	docker build -t ${MODULE} . -f image/Dockerfile
 .phony: create_image
@@ -13,7 +13,7 @@ push_latest:
 .phony: push_latest
 
 run_image:
-	docker run -p 5000:80 --rm --env-file=./config.env ${MODULE}:latest
+	 docker run -v /dev/bus/usb:/dev/bus/usb -v /run/dbus:/run/dbus -v /var/run/dbus:/var/run/dbus --cap-add=SYS_ADMIN --cap-add=NET_ADMIN --net=host  --rm --env-file=./config.env ${MODULE}:latest
 .phony: run_image
 
 lint:
