@@ -20,7 +20,7 @@ environments:
     description: The scanning while of the BLE interfaces
     value: ''
     default: 4
-    type: number
+    type: integer
     name: Scan Timeout
   - key: MAC_ADDR
     description: The advertised mac address of the needed BLE device
@@ -32,8 +32,8 @@ environments:
     description: The application scan and read the ble data every choosen period
     value: ''
     default: 5
-    type: number
-    name: Period between two scan tiemouts (secs)
+    type: integer
+    name: Period between two scans tiemout (secs)
 commands: []
 document:
   ports: []
