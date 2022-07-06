@@ -33,7 +33,7 @@ environments:
     value: ''
     default: 5
     type: integer
-    name: Period between two scans tiemout (secs)
+    name: Period
 commands: []
 document:
   ports: []
