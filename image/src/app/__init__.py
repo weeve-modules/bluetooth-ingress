@@ -10,14 +10,15 @@ from app.module import module_main
 log = getLogger(__name__)
 
 
-def create_app() -> bool:
+def create_app():
     """ Configures the flask ap and returns it
 
     Returns:
         bool: [App created or not]
     """
-    ingress_data, err = module_main()
 
+    module_main()
+    """
     if err:
         log.error("Error %s", err)
         return False
@@ -32,3 +33,4 @@ def create_app() -> bool:
     else:
         log.error("Error while sending data")
         return False
+    """

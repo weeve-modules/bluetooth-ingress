@@ -1,10 +1,10 @@
 version: 1.0.0
-name: Python Ingress Boilerplate
-description: Base module boilerplate for developers in Python.
+name: Bluetooth ingress
+description: This module filter by mac address scaned advertised data from ble devices and progress it to the egress.
 icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/Python.png
 type: input
 tags:
-  - Boilerplate Ingress
+  - Bluetooth Ingress
   - Python
   - Data
   - ingress
@@ -13,21 +13,27 @@ categories:
   - id: category
     name: Ingress
 image:
-  name: weevenetwork/python-ingress-boilerplate
+  name: weevenetwork/bluetooth-ingress
   tag: latest
 environments:
-  - key: OUTPUT_LABEL
-    description: Output label for data
+  - key: SCAN_TIMEOUT
+    description: The scanning while of the BLE interfaces
     value: ''
-    default: filteredTemp
-    type: string
-    name: Output Label
-  - key: OUTPUT_UNIT
-    description: Output unit for data
+    default: 4
+    type: integer
+    name: Scan Timeout
+  - key: MAC_ADDR
+    description: The advertised mac address of the needed BLE device
     value: ''
-    default: Celsius
+    default: '00:10:18:01:4b:b5'
     type: string
-    name: Output Unit
+    name: Mac Address
+  - key: PERIOD
+    description: The application scan and read the ble data every choosen period
+    value: ''
+    default: 5
+    type: integer
+    name: Period
 commands: []
 document:
   ports: []
