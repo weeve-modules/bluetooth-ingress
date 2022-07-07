@@ -1,5 +1,5 @@
 version: 1.0.0
-name: Bluetooth ingress
+name: Bluetooth Observer Ingress
 description: This module filter by mac address scaned advertised data from ble devices and progress it to the egress.
 icon: https://icons-020-demo.s3.eu-central-1.amazonaws.com/Python.png
 type: input
@@ -13,13 +13,13 @@ categories:
   - id: category
     name: Ingress
 image:
-  name: weevenetwork/bluetooth-ingress
+  name: weevenetwork/bluetooth-observer-ingress
   tag: latest
 environments:
   - key: SCAN_TIMEOUT
     description: The scanning while of the BLE interfaces
     value: ''
-    default: 4
+    default: 3
     type: integer
     name: Scan Timeout
   - key: MAC_ADDR

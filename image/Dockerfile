@@ -3,7 +3,7 @@ WORKDIR /app
 RUN mkdir -p /app
 COPY ./image/requirements.txt /app
 RUN apt-get update
-RUN apt-get install make -y libglib2.0-dev -y python3-pip -y
+RUN apt-get install make libglib2.0-dev python3-pip -y
 RUN pip3 install -r requirements.txt
 COPY . /app
 SHELL ["/bin/bash", "-c"]

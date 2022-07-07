@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-MODULE=weevenetwork/bluetooth-ingress
+MODULE=weevenetwork/bluetooth-observer-ingress
 create_image:
 	docker build -t ${MODULE} . -f image/Dockerfile
 .phony: create_image

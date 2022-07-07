@@ -1,17 +1,17 @@
-# bluetooth-ingress
+# bluetooth-observer-ingress
 
 
-|              |                                                                             |
-| ------------ | ----------------------------------------------------------------------------|
-| name         | Bluetooth Ingress                                                           |
-| version      | v0.1.0                                                                      |
-| docker image | [weevenetwork/bluetooth-ingress](https://linktodockerhub/bluetooth-ingress) |
-| tags         | Python, Flask, Docker, Weeve                                                |
-| authors      | Ghassen barbouchi                                                           |
+|              |                                                                                      |
+| ------------ | -------------------------------------------------------------------------------------|
+| name         | Bluetooth Observer Ingress                                                           |
+| version      | v0.1.0                                                                               |
+| docker image | [weevenetwork/bluetooth-ingress](https://linktodockerhub/bluetooth-observer-ingress) |
+| tags         | Python, Flask, Docker, Weeve                                                         |
+| authors      | Ghassen barbouchi                                                                    |
 
 ***
 ## Table of Content
-- [Bluetooth-ingress](#bluetooth-ingress)
+- [Bluetooth-observer-ingress](#bluetooth-observer-ingress)
   - [Table of Content](#table-of-content)
   - [Description](#description)
     - [Features](#features)

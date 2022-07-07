@@ -1,9 +1,10 @@
 
 from app.weeve.egress import send_data
-from logging import getLogger
+from logging import exception, getLogger
 from app.config import APPLICATION
 from time import sleep
 from bluepy.btle import Scanner
+import subprocess
 """
 All logic related to the module's main application
 Mostly only this file requires changes
@@ -31,7 +32,7 @@ def module_main():
                 print("device name ", dev.getValueText(DEVICE_NAME))
                 manuf_data = dev.getValueText(DEVICE_MANUF_DATA)
                 bluetooth_data = {'bleData': str(manuf_data) }
-                print("ble Dta",bluetooth_data)
+                print("ble Data",bluetooth_data)
                 sent = send_data(bluetooth_data)
                 if sent:
                     log.info("Data sent successfully")

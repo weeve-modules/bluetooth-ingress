@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      MODULE_NAME: bluetooth-ingress
+      MODULE_NAME: bluetooth-observer-ingress
       EGRESS_URL: https://hookb.in/r1YwjDyn7BHzWWJVK8Gq
       SCAN_TIMEOUT: 3
       MAC_ADDR: '00:10:18:01:4b:b5'
