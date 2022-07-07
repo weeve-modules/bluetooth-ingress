@@ -4,7 +4,7 @@
 # PIPESTATUS with a simple $?, but I don’t do that.
 set -o errexit -o pipefail -o noclobber -o nounset
 
-echo "Entrypoint script for http-ingress"
+echo "Entrypoint script for bluetooth-ingress"
 echo "Container args: $@"
 
 ########################
@@ -64,7 +64,6 @@ then
 else
     echo Egress url: $EGRESS_URL
 fi
-
 #↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 # YOUR CODE HERE  #
 #↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
